@@ -241,3 +241,72 @@ async function getBooks(url) {
 
 getBooks(music);
 ```
+
+# 4. HOW TO CREATE A NAVIGATION BAR AND LOGIN
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation bar and login</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="nav">
+        <a href="#" class="nav_logo">IO</a>
+        <ul class="nav_items">
+          <li class="nav_item">
+            <a href="#" class="nav_link">Home</a>
+            <a href="#" class="nav_link">Product</a>
+            <a href="#" class="nav_link">Services</a>
+            <a href="#" class="nav_link">Contact</a>
+          </li>
+        </ul>
+        <button class="button" id="form-open">Login</button>
+      </nav>
+    </header>
+    <main>
+      <form
+        id="login_form"
+        class="form_class"
+        action="login/login-access.php"
+        method="post"
+      >
+        <div class="form_div">
+          <label>Email:</label>
+          <input
+            class="field_class"
+            name="login_txt"
+            type="email"
+            placeholder="Enter your email"
+            autofocus
+            required
+          />
+          <label>Password:</label>
+          <input
+            id="pass"
+            class="field_class"
+            name="password_txt"
+            type="password"
+            placeholder="Enter password"
+          />
+          <button class="submit_class" type="submit" form="login_form">
+            Login
+          </button>
+        </div>
+        <div class="info_div">
+          <p>
+            Not registered yet?
+            <a href="#">Sign up here</a>
+          </p>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
+```
