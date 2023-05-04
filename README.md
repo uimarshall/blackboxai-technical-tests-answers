@@ -2,6 +2,8 @@
 
 This repository is for answers to the basic questions for Microverse Developer Agency for blackbox.io project.
 
+# 1. SIMPLE LOGIN PAGE
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -67,4 +69,4 @@ This repository is for answers to the basic questions for Microverse Developer A
 </html>
 ```
 
-![screenshot](./images/login.png)
+> ![screenshot](login.png)
